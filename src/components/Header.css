@@ -1,0 +1,52 @@
+/* src/Header.css */
+
+.app-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;  /* Increased height */
+    position: fixed;  /* Makes the header fixed */
+    top: 0;  /* Sticks to the top */
+    left: 0;
+    right: 0;
+    z-index: 1000;  /* Ensures the header stays on top of other content */
+  }
+  
+  
+  .app-logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-list li {
+    display: inline;
+  }
+  
+  .nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-list li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  
+  /* Add padding to the body to avoid content being hidden under the fixed header */
+  body {
+    padding-top: 80px;  /* Adjust based on the header height */
+  }
+  
